@@ -1,24 +1,1126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalciApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCK-Iu-ulY">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="lNq-qj-OL2">
+                                        <rect key="frame" x="8" y="8" width="359" height="718"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEY-ZR-NhQ" userLabel="Label View">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="125"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CZr-aI-OZz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="125"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXt-Se-rhk">
+                                                                <rect key="frame" x="0.0" y="0.0" width="359" height="62.666666666666664"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmW-ny-b0U">
+                                                                <rect key="frame" x="0.0" y="62.666666666666671" width="359" height="62.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="30"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="pXt-Se-rhk" firstAttribute="height" secondItem="nmW-ny-b0U" secondAttribute="height" id="y9l-R6-ZfM"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="CZr-aI-OZz" firstAttribute="top" secondItem="rEY-ZR-NhQ" secondAttribute="top" id="8rL-Vt-89e"/>
+                                                    <constraint firstAttribute="bottom" secondItem="CZr-aI-OZz" secondAttribute="bottom" id="SeP-rK-Flh"/>
+                                                    <constraint firstItem="CZr-aI-OZz" firstAttribute="leading" secondItem="rEY-ZR-NhQ" secondAttribute="leading" id="Zww-RX-E1A"/>
+                                                    <constraint firstAttribute="trailing" secondItem="CZr-aI-OZz" secondAttribute="trailing" id="cQ7-tu-yyk"/>
+                                                    <constraint firstAttribute="height" constant="125" id="e3X-cc-7jy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yFx-V6-cij" userLabel="Calculator View">
+                                                <rect key="frame" x="0.0" y="127" width="359" height="591"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="UhN-AX-F4g">
+                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="591"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNy-5C-7PD" userLabel="Scientific Calculator View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="591"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="6zp-4T-KuG">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="591"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lyq-z6-Jxu">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="116.66666666666667"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5Sd-OV-auQ">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="116.66666666666667"/>
+                                                                                        <subviews>
+                                                                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFz-xg-dk9">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="(">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWw-9t-bfn">
+                                                                                                <rect key="frame" x="32" y="0.0" width="30" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title=")">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68C-fP-xc3">
+                                                                                                <rect key="frame" x="64" y="0.0" width="30" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="mc">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJt-T0-gyw">
+                                                                                                <rect key="frame" x="96" y="0.0" width="30" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="m+">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOW-dN-Bs7">
+                                                                                                <rect key="frame" x="128" y="0.0" width="30" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="m-">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruq-M5-IZN">
+                                                                                                <rect key="frame" x="160" y="0.0" width="30" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="mr">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="68C-fP-xc3" firstAttribute="width" secondItem="LOW-dN-Bs7" secondAttribute="width" id="3Ww-v1-bW7"/>
+                                                                                            <constraint firstItem="rWw-9t-bfn" firstAttribute="width" secondItem="68C-fP-xc3" secondAttribute="width" id="4Xb-au-eRb"/>
+                                                                                            <constraint firstItem="JFz-xg-dk9" firstAttribute="width" secondItem="rWw-9t-bfn" secondAttribute="width" id="PKF-dX-Elb"/>
+                                                                                            <constraint firstItem="68C-fP-xc3" firstAttribute="width" secondItem="eJt-T0-gyw" secondAttribute="width" id="Trf-BC-kds"/>
+                                                                                            <constraint firstItem="LOW-dN-Bs7" firstAttribute="width" secondItem="Ruq-M5-IZN" secondAttribute="width" id="qNZ-j3-5uk"/>
+                                                                                        </constraints>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="5Sd-OV-auQ" firstAttribute="top" secondItem="Lyq-z6-Jxu" secondAttribute="top" id="NS8-iK-FFX"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="5Sd-OV-auQ" secondAttribute="bottom" id="dXF-JG-emi"/>
+                                                                                    <constraint firstItem="5Sd-OV-auQ" firstAttribute="leading" secondItem="Lyq-z6-Jxu" secondAttribute="leading" id="sPa-AM-1dV"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="5Sd-OV-auQ" secondAttribute="trailing" id="wUX-JK-9sW"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4TJ-Bk-4Fy">
+                                                                                <rect key="frame" x="0.0" y="118.66666666666669" width="0.0" height="116.66666666666669"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Q2x-1r-2q8">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="196" height="116.66666666666667"/>
+                                                                                        <subviews>
+                                                                                            <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2G5-rg-s13">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="31" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="2nd">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5a-vW-hx1">
+                                                                                                <rect key="frame" x="33" y="0.0" width="31" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="x2">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="29" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAQ-Zo-dVt">
+                                                                                                <rect key="frame" x="66" y="0.0" width="31" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="x3">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSO-nS-KVZ">
+                                                                                                <rect key="frame" x="99" y="0.0" width="31" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="xy">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQz-WK-BW0">
+                                                                                                <rect key="frame" x="132" y="0.0" width="31" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="ex">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYc-Wq-gHx">
+                                                                                                <rect key="frame" x="165" y="0.0" width="31" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="10x">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="2G5-rg-s13" firstAttribute="width" secondItem="D5a-vW-hx1" secondAttribute="width" id="CxV-fp-JAj"/>
+                                                                                            <constraint firstItem="cAQ-Zo-dVt" firstAttribute="width" secondItem="NSO-nS-KVZ" secondAttribute="width" id="RE9-ru-UZX"/>
+                                                                                            <constraint firstItem="D5a-vW-hx1" firstAttribute="width" secondItem="cAQ-Zo-dVt" secondAttribute="width" id="kPo-LS-hfv"/>
+                                                                                            <constraint firstItem="GQz-WK-BW0" firstAttribute="width" secondItem="DYc-Wq-gHx" secondAttribute="width" id="luK-OL-E5v"/>
+                                                                                            <constraint firstItem="NSO-nS-KVZ" firstAttribute="width" secondItem="GQz-WK-BW0" secondAttribute="width" id="ziy-G6-XWI"/>
+                                                                                        </constraints>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="trailing" secondItem="Q2x-1r-2q8" secondAttribute="trailing" id="WZk-uM-Qwe"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="Q2x-1r-2q8" secondAttribute="bottom" id="f0p-eJ-Oje"/>
+                                                                                    <constraint firstItem="Q2x-1r-2q8" firstAttribute="leading" secondItem="4TJ-Bk-4Fy" secondAttribute="leading" id="o7Q-C3-znL"/>
+                                                                                    <constraint firstItem="Q2x-1r-2q8" firstAttribute="top" secondItem="4TJ-Bk-4Fy" secondAttribute="top" id="sSp-3K-qsd"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WtV-mW-4uZ">
+                                                                                <rect key="frame" x="0.0" y="237.33333333333334" width="0.0" height="116.33333333333334"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5G1-4Y-FTg">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="274" height="116.33333333333333"/>
+                                                                                        <subviews>
+                                                                                            <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVk-yu-0vH">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="44" height="116.33333333333333"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="1/x">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="34" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRS-uj-8aV">
+                                                                                                <rect key="frame" x="46" y="0.0" width="44" height="116.33333333333333"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="2√x">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caM-ja-xKJ">
+                                                                                                <rect key="frame" x="92" y="0.0" width="44" height="116.33333333333333"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="3√x">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="36" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkP-Nc-okz">
+                                                                                                <rect key="frame" x="138" y="0.0" width="44" height="116.33333333333333"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="y√x">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="37" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RT2-tE-JJU">
+                                                                                                <rect key="frame" x="184" y="0.0" width="44" height="116.33333333333333"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="In">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="38" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4E-zP-OCo">
+                                                                                                <rect key="frame" x="230" y="0.0" width="44" height="116.33333333333333"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="log10">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="caM-ja-xKJ" firstAttribute="width" secondItem="wkP-Nc-okz" secondAttribute="width" id="2LF-O5-aMW"/>
+                                                                                            <constraint firstItem="oRS-uj-8aV" firstAttribute="width" secondItem="caM-ja-xKJ" secondAttribute="width" id="C9O-jn-SdV"/>
+                                                                                            <constraint firstItem="WVk-yu-0vH" firstAttribute="width" secondItem="oRS-uj-8aV" secondAttribute="width" id="EVF-ot-VXE"/>
+                                                                                            <constraint firstItem="wkP-Nc-okz" firstAttribute="width" secondItem="RT2-tE-JJU" secondAttribute="width" id="Fna-hn-hbD"/>
+                                                                                            <constraint firstItem="RT2-tE-JJU" firstAttribute="width" secondItem="V4E-zP-OCo" secondAttribute="width" id="T1f-0i-u70"/>
+                                                                                        </constraints>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="trailing" secondItem="5G1-4Y-FTg" secondAttribute="trailing" id="AgJ-jB-u8l"/>
+                                                                                    <constraint firstItem="5G1-4Y-FTg" firstAttribute="top" secondItem="WtV-mW-4uZ" secondAttribute="top" id="aRr-1G-vHA"/>
+                                                                                    <constraint firstItem="5G1-4Y-FTg" firstAttribute="leading" secondItem="WtV-mW-4uZ" secondAttribute="leading" id="cYf-4j-dYB"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="5G1-4Y-FTg" secondAttribute="bottom" id="m3h-ud-YPd"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqj-Dx-DPG">
+                                                                                <rect key="frame" x="0.0" y="355.66666666666663" width="0.0" height="116.66666666666669"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mIN-Lq-SE0">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="116.66666666666667"/>
+                                                                                        <subviews>
+                                                                                            <button opaque="NO" tag="39" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guX-xA-OUh">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="x!">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXf-hK-Jn1">
+                                                                                                <rect key="frame" x="32" y="0.0" width="30" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="sin">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="41" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGO-Rd-UJv">
+                                                                                                <rect key="frame" x="64" y="0.0" width="30" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="cos">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="42" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="564-JF-xPY">
+                                                                                                <rect key="frame" x="96" y="0.0" width="30" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="tan">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="43" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j71-dv-Axq">
+                                                                                                <rect key="frame" x="128" y="0.0" width="30" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                                                                <state key="normal" title="e">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="44" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5C-cf-ljq">
+                                                                                                <rect key="frame" x="160" y="0.0" width="30" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="EE">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="guX-xA-OUh" firstAttribute="width" secondItem="eXf-hK-Jn1" secondAttribute="width" id="85m-68-eni"/>
+                                                                                            <constraint firstItem="564-JF-xPY" firstAttribute="width" secondItem="j71-dv-Axq" secondAttribute="width" id="GrS-Ta-AYf"/>
+                                                                                            <constraint firstItem="j71-dv-Axq" firstAttribute="width" secondItem="g5C-cf-ljq" secondAttribute="width" id="Kz3-sg-vFu"/>
+                                                                                            <constraint firstItem="gGO-Rd-UJv" firstAttribute="width" secondItem="564-JF-xPY" secondAttribute="width" id="N4O-Ha-cFX"/>
+                                                                                            <constraint firstItem="eXf-hK-Jn1" firstAttribute="width" secondItem="gGO-Rd-UJv" secondAttribute="width" id="PLR-CO-mah"/>
+                                                                                        </constraints>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="mIN-Lq-SE0" firstAttribute="top" secondItem="gqj-Dx-DPG" secondAttribute="top" id="1du-TB-n43"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="mIN-Lq-SE0" secondAttribute="bottom" id="6FJ-TL-BN9"/>
+                                                                                    <constraint firstItem="mIN-Lq-SE0" firstAttribute="leading" secondItem="gqj-Dx-DPG" secondAttribute="leading" id="ENI-BF-l8q"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="mIN-Lq-SE0" secondAttribute="trailing" id="Y2S-EW-nZS"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gH8-0T-L9P">
+                                                                                <rect key="frame" x="0.0" y="474.33333333333343" width="0.0" height="116.66666666666669"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="gup-yC-Wov">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="262" height="116.66666666666667"/>
+                                                                                        <subviews>
+                                                                                            <button opaque="NO" tag="45" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5k-nm-1hK">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="42" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="Rad">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="46" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqK-if-FHI">
+                                                                                                <rect key="frame" x="44" y="0.0" width="42" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="sinh">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="47" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlD-DY-HdB">
+                                                                                                <rect key="frame" x="88" y="0.0" width="42" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="cosh">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="48" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8q-mB-OLD">
+                                                                                                <rect key="frame" x="132" y="0.0" width="42" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="tanh">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="49" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3L-zu-hSr">
+                                                                                                <rect key="frame" x="176" y="0.0" width="42" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                                                                <state key="normal" title="π">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1i-pL-rRf">
+                                                                                                <rect key="frame" x="220" y="0.0" width="42" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="Rand">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                            </button>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="w5k-nm-1hK" firstAttribute="width" secondItem="QqK-if-FHI" secondAttribute="width" id="2L5-LN-1be"/>
+                                                                                            <constraint firstItem="QqK-if-FHI" firstAttribute="width" secondItem="vlD-DY-HdB" secondAttribute="width" id="DME-DQ-WT2"/>
+                                                                                            <constraint firstItem="vlD-DY-HdB" firstAttribute="width" secondItem="W8q-mB-OLD" secondAttribute="width" id="FRp-mg-SfU"/>
+                                                                                            <constraint firstItem="W8q-mB-OLD" firstAttribute="width" secondItem="x3L-zu-hSr" secondAttribute="width" id="M4u-JQ-BKe"/>
+                                                                                            <constraint firstItem="x3L-zu-hSr" firstAttribute="width" secondItem="m1i-pL-rRf" secondAttribute="width" id="j9M-9p-O0O"/>
+                                                                                        </constraints>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="trailing" secondItem="gup-yC-Wov" secondAttribute="trailing" id="Cff-jY-Sb9"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="gup-yC-Wov" secondAttribute="bottom" id="Z15-fw-H6k"/>
+                                                                                    <constraint firstItem="gup-yC-Wov" firstAttribute="top" secondItem="gH8-0T-L9P" secondAttribute="top" id="a3S-Ol-51x"/>
+                                                                                    <constraint firstItem="gup-yC-Wov" firstAttribute="leading" secondItem="gH8-0T-L9P" secondAttribute="leading" id="hIA-54-Ly5"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstItem="Lyq-z6-Jxu" firstAttribute="height" secondItem="4TJ-Bk-4Fy" secondAttribute="height" id="0IV-Gk-3kv"/>
+                                                                            <constraint firstItem="gqj-Dx-DPG" firstAttribute="height" secondItem="gH8-0T-L9P" secondAttribute="height" id="1dN-VR-nF9"/>
+                                                                            <constraint firstItem="4TJ-Bk-4Fy" firstAttribute="height" secondItem="WtV-mW-4uZ" secondAttribute="height" id="Dm9-Wo-uDE"/>
+                                                                            <constraint firstItem="WtV-mW-4uZ" firstAttribute="height" secondItem="gqj-Dx-DPG" secondAttribute="height" id="NV3-Oi-Vxj"/>
+                                                                        </constraints>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="6zp-4T-KuG" secondAttribute="trailing" id="0Qs-1L-dS4"/>
+                                                                    <constraint firstAttribute="width" id="2ze-cE-uPe"/>
+                                                                    <constraint firstItem="6zp-4T-KuG" firstAttribute="leading" secondItem="GNy-5C-7PD" secondAttribute="leading" id="PmJ-qp-DGe"/>
+                                                                    <constraint firstItem="6zp-4T-KuG" firstAttribute="top" secondItem="GNy-5C-7PD" secondAttribute="top" id="uFe-cA-Dsy"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="6zp-4T-KuG" secondAttribute="bottom" id="vKU-wv-kSR"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Yv-z7-aHe" userLabel="Basic Calculator View">
+                                                                <rect key="frame" x="2" y="0.0" width="357" height="591"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="hX9-RO-Hcc">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="357" height="591"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pT-qX-8vs">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="357" height="116.66666666666667"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="yjn-z7-kcs">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="357" height="116.66666666666667"/>
+                                                                                        <subviews>
+                                                                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNk-fN-hQD">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="C">
+                                                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="operationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tvY-ia-2pc"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZ7-wa-P3o">
+                                                                                                <rect key="frame" x="89.666666666666686" y="0.0" width="88" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="+/-">
+                                                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="operationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yEx-g0-JK3"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hld-w5-evK">
+                                                                                                <rect key="frame" x="179.66666666666666" y="0.0" width="87.666666666666657" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                                                <state key="normal" title="%">
+                                                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="operationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3x-hI-CKJ"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ps-TB-yw9">
+                                                                                                <rect key="frame" x="269.33333333333331" y="0.0" width="87.666666666666686" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                                                                <state key="normal" title="÷">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="operationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S1I-Wi-IVs"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="qNk-fN-hQD" firstAttribute="width" secondItem="dZ7-wa-P3o" secondAttribute="width" id="Nra-zK-tTN"/>
+                                                                                            <constraint firstItem="dZ7-wa-P3o" firstAttribute="width" secondItem="hld-w5-evK" secondAttribute="width" id="gi7-bP-33P"/>
+                                                                                            <constraint firstItem="hld-w5-evK" firstAttribute="width" secondItem="3ps-TB-yw9" secondAttribute="width" id="izU-mv-sMV"/>
+                                                                                        </constraints>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="yjn-z7-kcs" firstAttribute="top" secondItem="1pT-qX-8vs" secondAttribute="top" id="CwP-Wd-D2X"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="yjn-z7-kcs" secondAttribute="bottom" id="IQr-Gv-20k"/>
+                                                                                    <constraint firstItem="yjn-z7-kcs" firstAttribute="leading" secondItem="1pT-qX-8vs" secondAttribute="leading" id="J0i-5b-4z6"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="yjn-z7-kcs" secondAttribute="trailing" id="KLR-Tl-yPR"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eF-ob-tXB">
+                                                                                <rect key="frame" x="0.0" y="118.66666666666669" width="357" height="116.66666666666669"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="pFG-ot-cqf">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="357" height="116.66666666666667"/>
+                                                                                        <subviews>
+                                                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52H-8P-Tdd">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                                                                <state key="normal" title="7">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L4A-P3-cIi"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLo-T7-Lyu">
+                                                                                                <rect key="frame" x="89.666666666666686" y="0.0" width="88" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                                                                <state key="normal" title="8">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24S-Bh-c6L"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dE7-mW-HxP">
+                                                                                                <rect key="frame" x="179.66666666666666" y="0.0" width="87.666666666666657" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                                                                <state key="normal" title="9">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ihv-54-keL"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYj-ZW-gDW">
+                                                                                                <rect key="frame" x="269.33333333333331" y="0.0" width="87.666666666666686" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                                                                <state key="normal" title="✕">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="operationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bVm-36-oyY"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="52H-8P-Tdd" firstAttribute="width" secondItem="dLo-T7-Lyu" secondAttribute="width" id="PeK-Xg-Hlm"/>
+                                                                                            <constraint firstItem="dE7-mW-HxP" firstAttribute="width" secondItem="VYj-ZW-gDW" secondAttribute="width" id="bXa-vb-ZYQ"/>
+                                                                                            <constraint firstItem="dLo-T7-Lyu" firstAttribute="width" secondItem="dE7-mW-HxP" secondAttribute="width" id="n5Z-J7-JOJ"/>
+                                                                                        </constraints>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="pFG-ot-cqf" firstAttribute="leading" secondItem="2eF-ob-tXB" secondAttribute="leading" id="FtU-ee-etb"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="pFG-ot-cqf" secondAttribute="trailing" id="hKe-uC-x4R"/>
+                                                                                    <constraint firstItem="pFG-ot-cqf" firstAttribute="top" secondItem="2eF-ob-tXB" secondAttribute="top" id="vHC-XR-Wgi"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="pFG-ot-cqf" secondAttribute="bottom" id="yC0-X1-Tfy"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gg-qr-fS5">
+                                                                                <rect key="frame" x="0.0" y="237.33333333333334" width="357" height="116.33333333333334"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="cBc-Tf-Qvn">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="357" height="116.33333333333333"/>
+                                                                                        <subviews>
+                                                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdn-2U-pYp">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="116.33333333333333"/>
+                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
+                                                                                                <state key="normal" title="4">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mF4-yg-YcD"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GH6-81-dix">
+                                                                                                <rect key="frame" x="89.666666666666686" y="0.0" width="88" height="116.33333333333333"/>
+                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
+                                                                                                <state key="normal" title="5">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TbZ-Io-dV2"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjb-lV-P2g">
+                                                                                                <rect key="frame" x="179.66666666666666" y="0.0" width="87.666666666666657" height="116.33333333333333"/>
+                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
+                                                                                                <state key="normal" title="6">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMO-ZI-HMU"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htu-Qf-l2n">
+                                                                                                <rect key="frame" x="269.33333333333331" y="0.0" width="87.666666666666686" height="116.33333333333333"/>
+                                                                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                                                                                                <state key="normal" title="⎯⎯">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="operationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xXk-f3-cAm"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="cdn-2U-pYp" firstAttribute="width" secondItem="GH6-81-dix" secondAttribute="width" id="AYa-Sa-gx6"/>
+                                                                                            <constraint firstItem="GH6-81-dix" firstAttribute="width" secondItem="Mjb-lV-P2g" secondAttribute="width" id="Rt6-d4-qFB"/>
+                                                                                            <constraint firstItem="Mjb-lV-P2g" firstAttribute="width" secondItem="htu-Qf-l2n" secondAttribute="width" id="gHa-cm-daj"/>
+                                                                                        </constraints>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="cBc-Tf-Qvn" firstAttribute="top" secondItem="1gg-qr-fS5" secondAttribute="top" id="8kt-dl-uj4"/>
+                                                                                    <constraint firstItem="cBc-Tf-Qvn" firstAttribute="leading" secondItem="1gg-qr-fS5" secondAttribute="leading" id="bUQ-1O-eIt"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="cBc-Tf-Qvn" secondAttribute="bottom" id="y7x-7I-wjw"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="cBc-Tf-Qvn" secondAttribute="trailing" id="yiB-aN-USd"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Med-pX-L8o">
+                                                                                <rect key="frame" x="0.0" y="355.66666666666663" width="357" height="116.66666666666669"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ggK-Sc-izd">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="357" height="116.66666666666667"/>
+                                                                                        <subviews>
+                                                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kp9-Qf-X3g">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                                                                                                <state key="normal" title="1">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MS8-Mg-m5t"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sju-Vr-zv6">
+                                                                                                <rect key="frame" x="89.666666666666686" y="0.0" width="88" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                                                                                                <state key="normal" title="2">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Tq-QZ-vN8"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLS-Ob-qXL">
+                                                                                                <rect key="frame" x="179.66666666666666" y="0.0" width="87.666666666666657" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                                                                                                <state key="normal" title="3">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ola-i3-5zb"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcM-zT-vEb">
+                                                                                                <rect key="frame" x="269.33333333333331" y="0.0" width="87.666666666666686" height="116.66666666666667"/>
+                                                                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                                                                                                <state key="normal" title="+">
+                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </state>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                        <integer key="value" value="15"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <action selector="operationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nvi-0S-jsN"/>
+                                                                                                </connections>
+                                                                                            </button>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="Kp9-Qf-X3g" firstAttribute="width" secondItem="sju-Vr-zv6" secondAttribute="width" id="Wid-59-dfg"/>
+                                                                                            <constraint firstItem="sju-Vr-zv6" firstAttribute="width" secondItem="dLS-Ob-qXL" secondAttribute="width" id="ZAh-1f-wVg"/>
+                                                                                            <constraint firstItem="dLS-Ob-qXL" firstAttribute="width" secondItem="GcM-zT-vEb" secondAttribute="width" id="sSF-Yw-Pf5"/>
+                                                                                        </constraints>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="ggK-Sc-izd" firstAttribute="top" secondItem="Med-pX-L8o" secondAttribute="top" id="EIV-rq-qsN"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="ggK-Sc-izd" secondAttribute="trailing" id="JMX-e2-02g"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="ggK-Sc-izd" secondAttribute="bottom" id="hMU-Pw-WN5"/>
+                                                                                    <constraint firstItem="ggK-Sc-izd" firstAttribute="leading" secondItem="Med-pX-L8o" secondAttribute="leading" id="tmj-Ff-464"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YM2-F6-P9a">
+                                                                                <rect key="frame" x="0.0" y="474.33333333333343" width="357" height="116.66666666666669"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="WgR-zG-kjn">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="357" height="116.66666666666667"/>
+                                                                                        <subviews>
+                                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MK9-rk-2X8">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="177.66666666666666" height="116.66666666666667"/>
+                                                                                                <subviews>
+                                                                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yq0-Fn-HzQ">
+                                                                                                        <rect key="frame" x="0.0" y="0.0" width="177.66666666666666" height="116.66666666666667"/>
+                                                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                                                                                                        <state key="normal" title="     0">
+                                                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                        </state>
+                                                                                                        <userDefinedRuntimeAttributes>
+                                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                                <integer key="value" value="15"/>
+                                                                                                            </userDefinedRuntimeAttribute>
+                                                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                                                        </userDefinedRuntimeAttributes>
+                                                                                                    </button>
+                                                                                                </subviews>
+                                                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstItem="Yq0-Fn-HzQ" firstAttribute="top" secondItem="MK9-rk-2X8" secondAttribute="top" id="99Q-7Y-UGG"/>
+                                                                                                    <constraint firstItem="Yq0-Fn-HzQ" firstAttribute="leading" secondItem="MK9-rk-2X8" secondAttribute="leading" id="cIN-nc-9OH"/>
+                                                                                                    <constraint firstAttribute="trailing" secondItem="Yq0-Fn-HzQ" secondAttribute="trailing" id="cOg-1o-cHO"/>
+                                                                                                    <constraint firstAttribute="bottom" secondItem="Yq0-Fn-HzQ" secondAttribute="bottom" id="dqg-F7-Kxf"/>
+                                                                                                </constraints>
+                                                                                            </view>
+                                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXP-YZ-PM5">
+                                                                                                <rect key="frame" x="179.66666666666663" y="0.0" width="177.33333333333337" height="116.66666666666667"/>
+                                                                                                <subviews>
+                                                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zDC-Gs-EJI">
+                                                                                                        <rect key="frame" x="0.0" y="0.0" width="177.33333333333334" height="116.66666666666667"/>
+                                                                                                        <subviews>
+                                                                                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="je6-GO-3CO">
+                                                                                                                <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="116.66666666666667"/>
+                                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                                                                                                <state key="normal" title=".">
+                                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                                </state>
+                                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                                        <integer key="value" value="15"/>
+                                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                            </button>
+                                                                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM0-mY-V05">
+                                                                                                                <rect key="frame" x="89.666666666666657" y="0.0" width="87.666666666666657" height="116.66666666666667"/>
+                                                                                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                                                                                <state key="normal" title="=">
+                                                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                                </state>
+                                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                                                        <integer key="value" value="15"/>
+                                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                                <connections>
+                                                                                                                    <action selector="operationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w1T-XA-GNq"/>
+                                                                                                                </connections>
+                                                                                                            </button>
+                                                                                                        </subviews>
+                                                                                                        <constraints>
+                                                                                                            <constraint firstItem="je6-GO-3CO" firstAttribute="width" secondItem="KM0-mY-V05" secondAttribute="width" id="SpU-PU-nN7"/>
+                                                                                                        </constraints>
+                                                                                                    </stackView>
+                                                                                                </subviews>
+                                                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstItem="zDC-Gs-EJI" firstAttribute="top" secondItem="FXP-YZ-PM5" secondAttribute="top" id="9pA-1z-r32"/>
+                                                                                                    <constraint firstAttribute="bottom" secondItem="zDC-Gs-EJI" secondAttribute="bottom" id="B1t-OX-2Fo"/>
+                                                                                                    <constraint firstAttribute="trailing" secondItem="zDC-Gs-EJI" secondAttribute="trailing" id="Gqq-rc-X1M"/>
+                                                                                                    <constraint firstItem="zDC-Gs-EJI" firstAttribute="leading" secondItem="FXP-YZ-PM5" secondAttribute="leading" id="I9D-Pr-XKm"/>
+                                                                                                </constraints>
+                                                                                            </view>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstItem="MK9-rk-2X8" firstAttribute="width" secondItem="FXP-YZ-PM5" secondAttribute="width" id="Oxv-ST-EP1"/>
+                                                                                        </constraints>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="trailing" secondItem="WgR-zG-kjn" secondAttribute="trailing" id="2jS-lc-AWe"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="WgR-zG-kjn" secondAttribute="bottom" id="3gl-0A-A5x"/>
+                                                                                    <constraint firstItem="WgR-zG-kjn" firstAttribute="leading" secondItem="YM2-F6-P9a" secondAttribute="leading" id="5dk-Cw-gar"/>
+                                                                                    <constraint firstItem="WgR-zG-kjn" firstAttribute="top" secondItem="YM2-F6-P9a" secondAttribute="top" id="VsH-C4-ZfR"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="Med-pX-L8o" firstAttribute="leading" secondItem="hX9-RO-Hcc" secondAttribute="leading" id="0Cs-n5-AMd"/>
+                                                                            <constraint firstItem="1gg-qr-fS5" firstAttribute="leading" secondItem="hX9-RO-Hcc" secondAttribute="leading" id="4kR-88-UbE"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="Med-pX-L8o" secondAttribute="trailing" id="5KY-04-IGk"/>
+                                                                            <constraint firstItem="1pT-qX-8vs" firstAttribute="height" secondItem="2eF-ob-tXB" secondAttribute="height" id="K4e-54-W79"/>
+                                                                            <constraint firstItem="1gg-qr-fS5" firstAttribute="height" secondItem="Med-pX-L8o" secondAttribute="height" id="P9b-qi-1xc"/>
+                                                                            <constraint firstItem="2eF-ob-tXB" firstAttribute="leading" secondItem="hX9-RO-Hcc" secondAttribute="leading" id="SLi-dl-NHM"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="2eF-ob-tXB" secondAttribute="trailing" id="SlT-Z1-VtL"/>
+                                                                            <constraint firstItem="1pT-qX-8vs" firstAttribute="leading" secondItem="hX9-RO-Hcc" secondAttribute="leading" id="UW4-Jc-IVJ"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="YM2-F6-P9a" secondAttribute="trailing" id="YeK-ec-pou"/>
+                                                                            <constraint firstItem="2eF-ob-tXB" firstAttribute="height" secondItem="1gg-qr-fS5" secondAttribute="height" id="dIU-vs-szm"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="1gg-qr-fS5" secondAttribute="trailing" id="hJv-pb-SUK"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="1pT-qX-8vs" secondAttribute="trailing" id="oNN-Nn-v5K"/>
+                                                                            <constraint firstItem="YM2-F6-P9a" firstAttribute="leading" secondItem="hX9-RO-Hcc" secondAttribute="leading" id="xqA-ck-wUV"/>
+                                                                            <constraint firstItem="Med-pX-L8o" firstAttribute="height" secondItem="YM2-F6-P9a" secondAttribute="height" id="xyv-NP-jY8"/>
+                                                                        </constraints>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="hX9-RO-Hcc" secondAttribute="trailing" id="2HX-ho-RZb"/>
+                                                                    <constraint firstItem="hX9-RO-Hcc" firstAttribute="leading" secondItem="2Yv-z7-aHe" secondAttribute="leading" id="FKn-Rh-8Fn"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="hX9-RO-Hcc" secondAttribute="bottom" id="LCu-Bx-hFs"/>
+                                                                    <constraint firstAttribute="width" constant="396" id="Ohm-9c-iZf"/>
+                                                                    <constraint firstItem="hX9-RO-Hcc" firstAttribute="top" secondItem="2Yv-z7-aHe" secondAttribute="top" id="bwR-7w-FXK"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="UhN-AX-F4g" secondAttribute="trailing" id="7jd-TZ-0KA"/>
+                                                    <constraint firstAttribute="bottom" secondItem="UhN-AX-F4g" secondAttribute="bottom" id="Nvr-Sp-Hhm"/>
+                                                    <constraint firstItem="UhN-AX-F4g" firstAttribute="leading" secondItem="yFx-V6-cij" secondAttribute="leading" id="o6K-bb-kib"/>
+                                                    <constraint firstItem="UhN-AX-F4g" firstAttribute="top" secondItem="yFx-V6-cij" secondAttribute="top" id="qWg-xO-cHs"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="lNq-qj-OL2" secondAttribute="trailing" id="HmN-Uz-rrH"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="lNq-qj-OL2" secondAttribute="bottom" id="frU-Rd-e69"/>
+                                    <constraint firstItem="lNq-qj-OL2" firstAttribute="top" secondItem="oCK-Iu-ulY" secondAttribute="topMargin" id="hGm-VV-NkA"/>
+                                    <constraint firstItem="lNq-qj-OL2" firstAttribute="leading" secondItem="oCK-Iu-ulY" secondAttribute="leadingMargin" id="tTC-mi-c2y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oCK-Iu-ulY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Y5-Sy-5HI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oCK-Iu-ulY" secondAttribute="bottom" id="Yun-Hz-4zB"/>
+                            <constraint firstItem="oCK-Iu-ulY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aVf-eZ-vfU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oCK-Iu-ulY" secondAttribute="trailing" id="ybr-6d-GYL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="basicCalculatorWidth" destination="Ohm-9c-iZf" id="Wh0-Wr-nyl"/>
+                        <outlet property="calculationLabel" destination="pXt-Se-rhk" id="OUp-ln-u14"/>
+                        <outlet property="resultLabel" destination="nmW-ny-b0U" id="dzQ-pt-RtI"/>
+                        <outlet property="scientificCalculatorWidth" destination="2ze-cE-uPe" id="LW4-wP-WUc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.74384236453201"/>
         </scene>
     </scenes>
 </document>

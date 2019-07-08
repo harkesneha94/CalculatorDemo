@@ -14,6 +14,7 @@
 		2CFA27922246A57E00EAE474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA27902246A57E00EAE474 /* LaunchScreen.storyboard */; };
 		2CFA279D2246A57F00EAE474 /* CalciAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA279C2246A57F00EAE474 /* CalciAppTests.swift */; };
 		2CFA27A82246A57F00EAE474 /* CalciAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA27A72246A57F00EAE474 /* CalciAppUITests.swift */; };
+		2CFA27B62246A8CE00EAE474 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA27B52246A8CE00EAE474 /* AppConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2CFA27A32246A57F00EAE474 /* CalciAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalciAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFA27A72246A57F00EAE474 /* CalciAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalciAppUITests.swift; sourceTree = "<group>"; };
 		2CFA27A92246A57F00EAE474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CFA27B52246A8CE00EAE474 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				2CFA278E2246A57E00EAE474 /* Assets.xcassets */,
 				2CFA27902246A57E00EAE474 /* LaunchScreen.storyboard */,
 				2CFA27932246A57E00EAE474 /* Info.plist */,
+				2CFA27B52246A8CE00EAE474 /* AppConstant.swift */,
 			);
 			path = CalciApp;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFA27B62246A8CE00EAE474 /* AppConstant.swift in Sources */,
 				2CFA278A2246A57C00EAE474 /* ViewController.swift in Sources */,
 				2CFA27882246A57C00EAE474 /* AppDelegate.swift in Sources */,
 			);
